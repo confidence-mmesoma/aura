@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AURA | Modern Clothing Store</title>
+    <link rel="stylesheet" href="style.css" />
+      <link rel="icon" type="image/x-icon" href="./assets/favicon.jpeg">
+  </head>
+  <body data-page="home">
+    <header class="main-header">
+      <div class="header-container">
+        <a href="index.html" class="logo">AURA</a>
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html" class="is-active">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">
+          Menu
+        </button>
+        <div class="header-actions">
+          <a class="icon-btn" href="shop.html">Search</a>
+          <a class="bag-btn" id="header-bag-btn" href="bag.html">Bag (0)</a>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="collection.html">Collections</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="hero-kicker">Spring / Summer 2026</p>
+          <h1 class="hero-title">Timeless Fits For Work, Weekend, and Travel</h1>
+          <p class="hero-subtitle">
+            Premium essentials built to mix and match. Easy returns, fast shipping, and
+            style support.
+          </p>
+          <div class="hero-actions">
+            <a href="shop.html" class="cta-btn">Shop New Arrivals</a>
+            <a href="shop.html" class="secondary-btn">Shop Best Sellers</a>
+          </div>
+          <ul class="trust-list">
+            <li>Free US shipping over $120</li>
+            <li>14-day easy returns</li>
+            <li>Secure checkout</li>
+          </ul>
+        </div>
+        <div class="hero-image-wrap">
+          <img src="./assets/HeroImg.jpeg" alt="Model wearing AURA collection" class="hero-img" />
+          <div class="promo-card">
+            <p>Limited launch offer</p>
+            <h2>30% OFF</h2>
+            <a href="shop.html">Shop Offer</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="collections" class="category-section">
+        <div class="section-head">
+          <h2>Shop By Category</h2>
+          <a href="shop.html">See all products</a>
+        </div>
+        <div class="category-grid">
+          <article class="category-card">
+            <img src="./assets/download (17).jpeg" alt="Men collection" />
+            <div class="category-copy">
+              <h3>Men</h3>
+              <p>Blazers, knits, and outerwear</p>
+              <a href="shop.html?category=men">Shop Men</a>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="./assets/download (18).jpeg" alt="Women collection" />
+            <div class="category-copy">
+              <h3>Women</h3>
+              <p>Sets, trench coats, and tailoring</p>
+              <a href="shop.html?category=women">Shop Women</a>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="./assets/download (19).jpeg" alt="Accessories collection" />
+            <div class="category-copy">
+              <h3>Accessories</h3>
+              <p>Bags and everyday details</p>
+              <a href="shop.html?category=accessories">Shop Accessories</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="featured-section">
+        <div class="section-head">
+          <h2>Featured Products</h2>
+          <a href="shop.html">Browse full shop</a>
+        </div>
+        <div class="featured-grid">
+          <article class="featured-card">
+            <img src="./assets/elegantblazer.jpeg" alt="Tailored Wool Blazer" />
+            <h3>Tailored Wool Blazer</h3>
+            <p>$189.00</p>
+            <button
+              class="add-to-cart-btn"
+              data-id="1"
+              data-name="Tailored Wool Blazer"
+              data-price="189"
+              data-color="Black"
+              data-size="M"
+            >
+              Add To Bag
+            </button>
+          </article>
+          <article class="featured-card">
+            <img src="./assets/linenresort.jpeg" alt="Linen Resort Set" />
+            <h3>Linen Resort Set</h3>
+            <p>$149.00</p>
+            <button
+              class="add-to-cart-btn"
+              data-id="2"
+              data-name="Linen Resort Set"
+              data-price="149"
+              data-color="Ivory"
+              data-size="M"
+            >
+              Add To Bag
+            </button>
+          </article>
+          <article class="featured-card">
+            <img src="./assets/download (20).jpeg" alt="Classic City Trench" />
+            <h3>Classic City Trench</h3>
+            <p>$169.00</p>
+            <button
+              class="add-to-cart-btn"
+              data-id="3"
+              data-name="Classic City Trench"
+              data-price="169"
+              data-color="Sand"
+              data-size="M"
+            >
+              Add To Bag
+            </button>
+          </article>
+        </div>
+      </section>
+
+      <section id="newsletter" class="newsletter-section">
+        <h2>Get 10% Off Your First Order</h2>
+        <p>Join the AURA email list for drops, offers, and style guides.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" id="newsletter-input" placeholder="Enter your email" required />
+          <button type="submit">Join Now</button>
+        </form>
+        <p id="newsletter-message" class="newsletter-message"></p>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3 class="logo footer-logo">AURA</h3>
+          <p>Quality wardrobe foundations for modern everyday life.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html?category=men">Men</a></li>
+            <li><a href="shop.html?category=women">Women</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Care Guide</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">2026 AURA Fashion. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
