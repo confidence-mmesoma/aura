@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AURA | Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.jpeg">
+  </head>
+  <body data-page="shop">
+    <header class="main-header">
+      <div class="header-container">
+        <a href="index.html" class="logo">AURA</a>
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html" class="is-active">Shop</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">
+          Menu
+        </button>
+        <div class="header-actions">
+          <a class="icon-btn" href="shop.html">Search</a>
+          <a class="bag-btn" id="header-bag-btn" href="bag.html">Bag (0)</a>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="is-active">Shop</a>
+        <a href="collection.html">Collections</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="shop-page">
+      <section class="shop-hero">
+        <p>Built to convert visitors into buyers</p>
+        <h1>Find the right fit by category, color, and price</h1>
+      </section>
+
+      <section class="shop-controls">
+        <div class="control-group">
+          <label for="search-input">Search</label>
+          <input id="search-input" type="text" placeholder="Try blazer, trench, bag..." />
+        </div>
+
+        <div class="control-group">
+          <label>Category</label>
+          <div class="filter-buttons" id="category-filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="men">Men</button>
+            <button class="filter-btn" data-category="women">Women</button>
+            <button class="filter-btn" data-category="accessories">Accessories</button>
+            <button class="filter-btn" data-category="new">New In</button>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="color-filter">Color</label>
+          <select id="color-filter">
+            <option value="all">All Colors</option>
+            <option value="Black">Black</option>
+            <option value="Navy">Navy</option>
+            <option value="Sand">Sand</option>
+            <option value="Ivory">Ivory</option>
+            <option value="Olive">Olive</option>
+            <option value="Slate">Slate</option>
+            <option value="Gold">Gold</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <label for="sort-filter">Sort</label>
+          <select id="sort-filter">
+            <option value="featured">Featured</option>
+            <option value="price-low">Price: low to high</option>
+            <option value="price-high">Price: high to low</option>
+            <option value="best-selling">Best selling</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="shop-results-head">
+        <p id="results-count">0 products</p>
+        <p>Free shipping on orders over $120</p>
+      </section>
+
+      <section id="shop-grid" class="shop-grid"></section>
+
+      <div id="product-modal" class="modal hidden" role="dialog" aria-modal="true">
+        <div class="modal-content">
+          <button id="close-modal-btn" class="close-modal-btn">Close</button>
+          <div id="modal-body"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3 class="logo footer-logo">AURA</h3>
+          <p>Quality wardrobe foundations for modern everyday life.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="shop.html?category=men">Men</a></li>
+            <li><a href="shop.html?category=women">Women</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Care Guide</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">2026 AURA Fashion. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

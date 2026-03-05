@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AURA | Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.jpeg">
+  </head>
+  <body data-page="contact">
+    <header class="main-header">
+      <div class="header-container">
+        <a href="index.html" class="logo">AURA</a>
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="contact.html" class="is-active">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          Menu
+        </button>
+        <div class="header-actions">
+          <a class="icon-btn" href="shop.html">Search</a>
+          <a class="bag-btn" id="header-bag-btn" href="bag.html">Bag (0)</a>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="collection.html">Collection</a>
+        <a href="contact.html" class="is-active">Contact</a>
+      </nav>
+    </header>
+
+    <main class="contact-page">
+      <section class="contact-hero">
+        <div>
+          <p class="contact-overline">AURA Client Care</p>
+          <h1>How can we help you today?</h1>
+          <p>
+            Reach us for order updates, size advice, returns, styling guidance,
+            and partnership requests.
+          </p>
+        </div>
+        <img
+          src="./assets/linenresort.jpeg"
+          alt="AURA support and customer care"
+        />
+      </section>
+
+      <section class="contact-quick-support">
+        <article class="support-card">
+          <h3>Talk To Sales</h3>
+          <p>Need help choosing products for your wardrobe?</p>
+          <a href="mailto:sales@aura.com">sales@aura.com</a>
+        </article>
+        <article class="support-card">
+          <h3>Order Support</h3>
+          <p>Delivery, exchanges, returns, and payment support.</p>
+          <a href="mailto:support@aura.com">support@aura.com</a>
+        </article>
+        <article class="support-card">
+          <h3>Call Us</h3>
+          <p>Mon-Sat: 9:00 AM - 7:00 PM (EST)</p>
+          <a href="tel:+18885551212">+1 (888) 555-1212</a>
+        </article>
+      </section>
+
+      <section class="contact-layout">
+        <div class="contact-form-card">
+          <h2>Send Us A Message</h2>
+          <p>We reply within 24 hours.</p>
+          <form id="contact-form" novalidate>
+            <div class="form-grid">
+              <label>
+                Full Name
+                <input
+                  type="text"
+                  id="contact-name"
+                  placeholder="Enter your full name"
+                />
+                <small class="error-text" id="error-name"></small>
+              </label>
+              <label>
+                Email
+                <input
+                  type="email"
+                  id="contact-email"
+                  placeholder="Enter your email"
+                />
+                <small class="error-text" id="error-email"></small>
+              </label>
+            </div>
+
+            <div class="form-grid">
+              <label>
+                Phone Number
+                <input
+                  type="text"
+                  id="contact-phone"
+                  placeholder="Optional: +1 000 000 0000"
+                />
+                <small class="error-text" id="error-phone"></small>
+              </label>
+              <label>
+                Topic
+                <select id="contact-topic">
+                  <option value="">Select a topic</option>
+                  <option value="order">Order Support</option>
+                  <option value="size">Sizing Help</option>
+                  <option value="returns">Returns and Exchanges</option>
+                  <option value="bulk">Bulk / Corporate Order</option>
+                  <option value="other">Other</option>
+                </select>
+                <small class="error-text" id="error-topic"></small>
+              </label>
+            </div>
+
+            <label>
+              Message
+              <textarea
+                id="contact-message"
+                rows="5"
+                placeholder="Tell us exactly what you need and your order number if available."
+              ></textarea>
+              <small class="error-text" id="error-message"></small>
+            </label>
+
+            <button type="submit" class="contact-submit-btn">
+              Send Message
+            </button>
+            <p id="contact-form-success" class="form-success-message"></p>
+          </form>
+        </div>
+
+        <aside class="contact-side">
+          <div class="order-lookup-card">
+            <h3>Order Lookup</h3>
+            <p>Check your order status in seconds.</p>
+            <label>
+              Order Number
+              <input
+                type="text"
+                id="lookup-order"
+                placeholder="Example: AURA-1024"
+              />
+            </label>
+            <label>
+              Email
+              <input
+                type="email"
+                id="lookup-email"
+                placeholder="Email used at checkout"
+              />
+            </label>
+            <button id="lookup-btn">Check Status</button>
+            <p id="lookup-result" class="lookup-result"></p>
+          </div>
+
+          <div class="store-hours-card">
+            <h3>Store & Studio Hours</h3>
+            <ul>
+              <li>
+                <span>Monday - Friday</span><strong>9:00 AM - 7:00 PM</strong>
+              </li>
+              <li><span>Saturday</span><strong>10:00 AM - 6:00 PM</strong></li>
+              <li><span>Sunday</span><strong>11:00 AM - 5:00 PM</strong></li>
+            </ul>
+            <p>102 Madison Ave, New York, NY 10016</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="faq-section">
+        <div class="faq-head">
+          <h2>Frequently Asked Questions</h2>
+          <p>Quick answers for the most common support requests.</p>
+        </div>
+        <div class="faq-list" id="faq-list">
+          <article class="faq-item">
+            <button class="faq-question">How long does shipping take?</button>
+            <div class="faq-answer">
+              <p>Standard shipping takes 2-5 business days in the US.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question">Can I return sale items?</button>
+            <div class="faq-answer">
+              <p>
+                Sale items can be exchanged for size or store credit within 14
+                days.
+              </p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question">
+              Do you offer international shipping?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. International delivery windows vary between 5-10 business
+                days.
+              </p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question">How do I find my size?</button>
+            <div class="faq-answer">
+              <p>
+                Use our size chart in each product page or contact us for
+                personalized fit advice.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3 class="logo footer-logo">AURA</h3>
+          <p>Quality wardrobe foundations for modern everyday life.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="bag.html">Bag</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">2026 AURA Fashion. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

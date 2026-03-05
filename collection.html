@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AURA | Collection</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.jpeg">
+  </head>
+  <body data-page="collection">
+    <header class="main-header">
+      <div class="header-container">
+        <a href="index.html" class="logo">AURA</a>
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="collection.html" class="is-active">Collection</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-nav">
+          Menu
+        </button>
+        <div class="header-actions">
+          <a class="icon-btn" href="shop.html">Search</a>
+          <a class="bag-btn" id="header-bag-btn" href="bag.html">Bag (0)</a>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="collection.html" class="is-active">Collection</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="collection-page">
+      <section class="collection-hero">
+        <div class="collection-hero-copy">
+          <p class="collection-overline">AURA Studio Collection</p>
+          <h1>Elegant capsules designed to move with your day</h1>
+          <p>
+            Build complete looks faster with curated matching pieces, soft color stories,
+            and premium tailoring.
+          </p>
+          <div class="collection-hero-actions">
+            <a href="shop.html" class="cta-btn">Shop Collection</a>
+            <a href="#collection-builder" class="secondary-btn">Build My Look</a>
+          </div>
+        </div>
+        <div class="collection-hero-image">
+          <img src="./assets/HeroImg.jpeg" alt="AURA collection hero" />
+        </div>
+      </section>
+
+      <section class="collection-filter-panel">
+        <div class="collection-filter-head">
+          <h2>Explore Collection Stories</h2>
+          <p>
+            Filter looks by occasion. Save the ones you want to buy later.
+            <strong id="saved-looks-count">0</strong> saved.
+          </p>
+        </div>
+
+        <div class="collection-filters">
+          <button class="collection-filter-btn active" data-filter="all">All Looks</button>
+          <button class="collection-filter-btn" data-filter="work">Work Edit</button>
+          <button class="collection-filter-btn" data-filter="weekend">Weekend Edit</button>
+          <button class="collection-filter-btn" data-filter="evening">Evening Edit</button>
+        </div>
+      </section>
+
+      <section class="collection-grid" id="collection-grid">
+        <article class="collection-card" data-style="work">
+          <img src="./assets/capsule.jpeg" alt="Tailored work capsule" />
+          <div class="collection-card-body">
+            <p class="collection-tag">Work Edit</p>
+            <h3>Power Tailoring Capsule</h3>
+            <p>Sharp blazer, wide-leg trouser, and knit polo for a clean weekday uniform.</p>
+            <div class="collection-price-row">
+              <strong>$189 - $319</strong>
+              <span>3 piece look</span>
+            </div>
+            <div class="collection-card-actions">
+              <button
+                class="preview-look-btn"
+                data-title="Power Tailoring Capsule"
+                data-image="./assets/capsule.jpeg"
+                data-copy="This capsule is built for meetings, office days, and after-work events. Pair navy and slate for a polished profile."
+              >
+                Preview
+              </button>
+              <button class="save-look-btn">Save Look</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="collection-card" data-style="weekend">
+          <img src="./assets/relaxedcapsule.jpeg" alt="Weekend capsule" />
+          <div class="collection-card-body">
+            <p class="collection-tag">Weekend Edit</p>
+            <h3>Relaxed Linen Capsule</h3>
+            <p>Breathable shirt set, textured layer, and light utility bag for city weekends.</p>
+            <div class="collection-price-row">
+              <strong>$149 - $268</strong>
+              <span>3 piece look</span>
+            </div>
+            <div class="collection-card-actions">
+              <button
+                class="preview-look-btn"
+                data-title="Relaxed Linen Capsule"
+                data-image="./assets/relaxedcapsule.jpeg"
+                data-copy="Designed for movement and comfort. Ivory and sand tones keep the look bright, balanced, and easy to restyle."
+              >
+                Preview
+              </button>
+              <button class="save-look-btn">Save Look</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="collection-card" data-style="evening">
+          <img src="./assets/eveningedit.jpeg" alt="Evening capsule" />
+          <div class="collection-card-body">
+            <p class="collection-tag">Evening Edit</p>
+            <h3>Night City Capsule</h3>
+            <p>Statement trench, monochrome top, and metallic accents for dinner plans.</p>
+            <div class="collection-price-row">
+              <strong>$169 - $309</strong>
+              <span>3 piece look</span>
+            </div>
+            <div class="collection-card-actions">
+              <button
+                class="preview-look-btn"
+                data-title="Night City Capsule"
+                data-image="./assets/eveningedit.jpeg"
+                data-copy="Built for evenings out. Black and navy layers with one accessory create a confident and elevated silhouette."
+              >
+                Preview
+              </button>
+              <button class="save-look-btn">Save Look</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="collection-card" data-style="work">
+          <img src="./assets/officecapsule.jpeg" alt="Minimal office capsule" />
+          <div class="collection-card-body">
+            <p class="collection-tag">Work Edit</p>
+            <h3>Minimal Office Capsule</h3>
+            <p>Neutral palette pieces that layer quickly and stay polished all week.</p>
+            <div class="collection-price-row">
+              <strong>$109 - $259</strong>
+              <span>4 piece look</span>
+            </div>
+            <div class="collection-card-actions">
+              <button
+                class="preview-look-btn"
+                data-title="Minimal Office Capsule"
+                data-image="./assets/officecapsule.jpeg"
+                data-copy="Keep decision fatigue low with repeatable shapes and premium basics. Ideal for Monday to Friday styling."
+              >
+                Preview
+              </button>
+              <button class="save-look-btn">Save Look</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="collection-card" data-style="weekend">
+          <img src="./assets/streetcapsule.jpeg" alt="Street weekend capsule" />
+          <div class="collection-card-body">
+            <p class="collection-tag">Weekend Edit</p>
+            <h3>Street Utility Capsule</h3>
+            <p>Relaxed knits, utility jacket, and durable accessories for day-long comfort.</p>
+            <div class="collection-price-row">
+              <strong>$89 - $249</strong>
+              <span>3 piece look</span>
+            </div>
+            <div class="collection-card-actions">
+              <button
+                class="preview-look-btn"
+                data-title="Street Utility Capsule"
+                data-image="./assets/streetcapsule.jpeg"
+                data-copy="A durable, versatile edit for weekends and travel. Olive and black tones keep this style grounded and premium."
+              >
+                Preview
+              </button>
+              <button class="save-look-btn">Save Look</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="collection-card" data-style="evening">
+          <img src="./assets/leatherbag.jpeg" alt="Elegant evening accessories capsule" />
+          <div class="collection-card-body">
+            <p class="collection-tag">Evening Edit</p>
+            <h3>Soft Luxe Accessories Capsule</h3>
+            <p>Crossbody, hoops, and statement layers to finish dinner and event outfits.</p>
+            <div class="collection-price-row">
+              <strong>$49 - $199</strong>
+              <span>3 piece look</span>
+            </div>
+            <div class="collection-card-actions">
+              <button
+                class="preview-look-btn"
+                data-title="Soft Luxe Accessories Capsule"
+                data-image="./assets/leatherbag.jpeg"
+                data-copy="Small details that raise your entire look. Great for parties, date nights, and special events."
+              >
+                Preview
+              </button>
+              <button class="save-look-btn">Save Look</button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="collection-builder" id="collection-builder">
+        <div class="collection-builder-copy">
+          <h2>Build A Look In 10 Seconds</h2>
+          <p>
+            Pick your occasion and color direction. We will recommend the best collection
+            capsule to start from.
+          </p>
+        </div>
+        <div class="collection-builder-form">
+          <label for="occasion-select">Occasion</label>
+          <select id="occasion-select">
+            <option value="work">Work</option>
+            <option value="weekend">Weekend</option>
+            <option value="evening">Evening</option>
+          </select>
+
+          <label for="palette-select">Palette</label>
+          <select id="palette-select">
+            <option value="neutral">Neutral</option>
+            <option value="dark">Dark</option>
+            <option value="warm">Warm</option>
+          </select>
+
+          <button id="recommend-look-btn">Recommend Look</button>
+          <div id="recommend-look-result" class="recommend-look-result"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="collection-preview-modal" class="collection-preview-modal hidden">
+      <div class="collection-preview-content">
+        <button id="close-collection-modal" class="close-modal-btn">Close</button>
+        <div id="collection-preview-body"></div>
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3 class="logo footer-logo">AURA</h3>
+          <p>Quality wardrobe foundations for modern everyday life.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="shop.html">All Products</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="bag.html">Bag</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">2026 AURA Fashion. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
